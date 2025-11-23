@@ -8,5 +8,5 @@ qemu-system-x86_64 \
   -display none \
   -netdev user,id=net0,hostfwd=tcp::2222-:22 \
   -device virtio-net-pci,netdev=net0
-# ssh -XC -p 2222 user@localhost # -t "code"
+# ssh -XC -p 2222 user@localhost
 # code
