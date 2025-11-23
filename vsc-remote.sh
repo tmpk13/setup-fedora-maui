@@ -10,3 +10,13 @@ qemu-system-x86_64 \
   -device virtio-net-pci,netdev=net0
 # ssh -XC -p 2222 user@localhost
 # code
+
+# Install waypipe on both
+# Use wayland on local
+
+# sudo apt install waypipe
+# sudo dnf install waypipe
+
+# On remote: `waypipe server`
+
+# On local: `waypipe --no-gpu ssh -p 2222 user@localhost "code --new-window --wait --ozone-platform=wayland"`
